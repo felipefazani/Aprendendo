@@ -1,3 +1,0 @@
-C:/Users/Felipe/Documents/Aprendendo/Aprendendo/Estruturas/1estrutura/cmake-build-debug/CMakeFiles/1estrutura.dir
-C:/Users/Felipe/Documents/Aprendendo/Aprendendo/Estruturas/1estrutura/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Felipe/Documents/Aprendendo/Aprendendo/Estruturas/1estrutura/cmake-build-debug/CMakeFiles/rebuild_cache.dir
