@@ -7,12 +7,12 @@ pontos, subtracao de dois pontos, multiplicacao por um escalar.
 */
 #include <stdio.h>
 
-struct Coordenada{
+typedef struct Coordenada{
     float x;
     float y;
-};
+} Ponto; // assim economiza uma linha na hora de criar o typedef
 
-typedef struct Coordenada Ponto;
+//typedef struct Coordenada Ponto;
 
 Ponto leCoordenada();
 void imprimePnt(Ponto);
