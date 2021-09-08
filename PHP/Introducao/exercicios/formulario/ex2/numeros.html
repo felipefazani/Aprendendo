@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Numeros</title>
+</head>
+<body>
+   <form action="processa.php" method="POST">
+      <label for="num1">num1: </label>
+      <input type="number" id="num1" name="n1">
+
+      <label for="num2">num2: </label>
+      <input type="number" id="num2" name="n2">
+
+      
+      <select name="seletor" id="operacao">
+         <option value="1">Soma</option>
+         <option value="2">Subtração</option>
+         <option value="3">Multiplicação</option>
+         <option value="4">Divisão</option>
+      </select>
+      
+      <input type="submit" value="Enviar">
+   </form>
+</body>
+</html>
