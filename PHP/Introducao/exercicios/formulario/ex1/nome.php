@@ -1,4 +1,10 @@
 <?php 
+// Utilizando Formulário, crie um programa que receba o nome e
+// sobrenome em dois input e depois exiba o nome e o sobrenome 
+// concatenado em outra input
+?>
+
+<?php 
    if (isset($_POST["nome"]))
       $nome = $_POST["nome"];
    if (isset($_POST["sobrenome"]))
