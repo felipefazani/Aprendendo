@@ -12,6 +12,8 @@
 
    if (isset($_POST["nome"]) && isset($_POST["sobrenome"]))
       $nomeCompleto = $nome . " " . $sobrenome;
+      // $nomeCompleto = "$nome $sobrenome";
+
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +35,8 @@
       <input type="submit" value="Enviar">
       <br>
       <br>
-      <input type="text" value="<?php if (isset($nomeCompleto)) echo $nomeCompleto?>">
+      <label for="nomecompleto">Nome completo: </label>
+      <input type="text" id="nomecompleto" value="<?php if (isset($nomeCompleto)) echo $nomeCompleto?>" disabled>
    </form>
 </body>
 </html>
