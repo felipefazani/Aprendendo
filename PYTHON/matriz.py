@@ -1,11 +1,11 @@
 def cria_matriz(linhas, colunas):
    matriz = []
    for i in range(linhas):
-      col = []
+      lin = []
       for j in range(colunas):
-         col.append(int(input("Digite o elemento ["+ str(i) +"]["+ str(j) +"]: ")))
+         lin.append(int(input("Digite o elemento ["+ str(i) +"]["+ str(j) +"]: ")))
       
-      matriz.append(col)
+      matriz.append(lin)
    
    return matriz
 
