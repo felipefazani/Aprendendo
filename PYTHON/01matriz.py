@@ -1,9 +1,9 @@
-def cria_matriz(linhas, colunas):
+def cria_matriz(linhas, colunas, valor):
    matriz = []
    for i in range(linhas):
       lin = []
       for j in range(colunas):
-         lin.append(int(input("Digite o elemento ["+ str(i) +"]["+ str(j) +"]: ")))
+         lin.append(valor)
       
       matriz.append(lin)
    
@@ -17,6 +17,3 @@ def le_matriz():
 def imprime_matriz(tabela):
    for i in tabela:
       print(i)
-
-x = le_matriz()
-imprime_matriz(x)
