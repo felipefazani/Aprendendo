@@ -82,4 +82,23 @@ echo $vetorNomes[5];
 
 //converter vetor em string - implode()
 $nomes = implode(",",$vetorNomes);
+
+// -=-=-=-=-=-=-=-=- manipulacao de vetores -=-=-=-=-=-=-=-
+
+$nome = []; // array
+$nome = [[]]; // matriz
+
+$carro = ["VW" => "Fusca", "Renault" => ['Logan', 'Duster']]; // matriz
+
+$idade = [40, 31, 12, 43, 74, 34, 72, 45, 63, 42, 51, 32, 17, 21];
+
+sort($idade); // a funcao sort ordena o vetor em ordem crescente e se for um vetor associativo perde-se as associacoes
+shuffle($idade); // embaralha o vetor, tbm perde-se os indices
+asort($idade); // ordena mantendo os indices
+ksort($carro); // o ksort ordena mantendo as associacoes
+
+print_r($idade); // printa todos os elementos do vetor com os seus indices
+var_dump($idade); // printa todos os elementos do vetor sem seus indices
+
+array_push($idade, 19); // adiciona 19 no final do vetor aumentando mais um lugar no vetor
 ?>
