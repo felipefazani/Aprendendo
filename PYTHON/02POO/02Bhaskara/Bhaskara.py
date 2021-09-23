@@ -1,4 +1,4 @@
-class Bhaskara:
+class Bhaskaraa:
    def delta(self, a, b, c):
       return b ** 2 - 4 * a * c
    
