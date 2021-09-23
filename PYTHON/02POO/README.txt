@@ -53,3 +53,11 @@ USANDO CONSTRUTOR NA CLASSE
    - sintaxe:
       nome_do_objeto = Carro("nome_do_modelo", ano_do_carro, "cor_do_carro")
    - isso facilita para criar um objeto
+
+FIXTURE
+- um valor fixo para um conjunto de testes, ajuda na redução de códigos repetidos
+- também é muito utilizado para guardar um objeto que requer um esforço maior para ser criado
+- DEFININDO UM FIXTURE
+   - basta criar uma função que cria o objeto e marcamos-a com
+
+      @pytest.fixture
