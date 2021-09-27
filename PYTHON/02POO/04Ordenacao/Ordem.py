@@ -13,12 +13,21 @@ class Ordenacao:
             j += 1
          lista[menor_posicao], lista[i] = lista[i], lista[menor_posicao]
 
+   def bubble_sort(self, lista):
+      '''Ordena a lista de forma crescente por Bubble Sort'''
+      for j in range(len(lista)):
+         i = 0
+         while i < len(lista) - 1 - j:
+            if lista[i] > lista[i+1]:
+               lista[i], lista[i+1] = lista[i+1], lista[i]
+            i += 1
+
 class Lista:
    def crialista(self, tamanho):
       '''Cria uma lista de números aleatórios'''
       lista = []
       while tamanho > 0:
-         lista.append(random.randint(0, 10))
+         lista.append(random.randint(-10000, 10000))
          tamanho -= 1
       return lista
    
@@ -29,3 +38,10 @@ class Lista:
             return False
       return True
 
+l = Lista()
+o = Ordenacao()
+lista = l.crialista(50)
+# print(lista)
+o.bubble_sort(lista)
+# print(lista)
+print(l.verificaListaCrescente(lista))
