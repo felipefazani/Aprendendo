@@ -25,10 +25,7 @@ class Ordenacao:
 class Lista:
    def crialista(self, tamanho):
       '''Cria uma lista de números aleatórios'''
-      lista = []
-      while tamanho > 0:
-         lista.append(random.randint(-10000, 10000))
-         tamanho -= 1
+      lista = [random.randint(-10000, 10000) for x in range(tamanho)]
       return lista
    
    def verificaListaCrescente(self, lista):
