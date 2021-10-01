@@ -34,11 +34,3 @@ class Lista:
          if (lista[i] > lista[i+1]):
             return False
       return True
-
-l = Lista()
-o = Ordenacao()
-lista = l.crialista(50)
-# print(lista)
-o.bubble_sort(lista)
-# print(lista)
-print(l.verificaListaCrescente(lista))
