@@ -7,7 +7,7 @@ def expressao(ex):
       ex.remove(' ')
    calcula_exp('*', '/', ex)
    calcula_exp('+', '-', ex)
-   return ex
+   return ex[0]
    
 
 def existe(op, list):
