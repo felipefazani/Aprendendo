@@ -1,5 +1,6 @@
 <?php
-include "header.php"
+// include "header.php" 
+// nao eh necessario pois temos o include header ja nos outros lugares onde chamamos o modalCliente
 ?>
 
 <body>
