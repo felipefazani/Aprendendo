@@ -59,7 +59,7 @@ class Cliente
       // consulta banco de dados
 
       // $comandosql = "Select codigo, nome, endereco, telefone";
-      $comandosql = "Select * from cliente";
+      $comandosql = "Select * from cliente order by nome";
       $dados = $conexao->query($comandosql); // essa query retorna uma tabela com tudo o que foi solicitado
       return $dados;
    }

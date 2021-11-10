@@ -1,6 +1,7 @@
 <?php
 include "header.php";
 include "modalCliente.php";
+require "../controller/clienteController.php";
 ?>
 
 <body class="container">
@@ -14,13 +15,20 @@ include "modalCliente.php";
          <th scope="col">Ações</th>
       </thead>
       <tbody>
+         <?php 
+            while ($objcli = $dados->fetch_object()) {?> <!--  esse $dados->fetch_object() retorna transforma o $dados (que é uma tabela retornada la da funcao listartodos no cliente.php) em um objeto -->
          <tr>
-            <th scope="row">1</th>
-            <td class="table-active">nome</td>
-            <td>@endereco</td>
-            <td>@telefone</td>
-            <td>Editar | Apagar</td>
+            <th scope="row"><?php echo $objcli->codigo; ?></th>
+            <td><?php echo $objcli->nome; ?></td>
+            <td><?php echo $objcli->endereco; ?></td>
+            <td><?php echo $objcli->telefone; ?></td>
+            <td>
+               Editar | 
+               <a href="#" onclick="javascript: if (confirm('Você realmente deseja excluir este cliente?'))location.href='../controller/clienteController.php?id=<?php echo $objcli->codigo ?>&acao=excluir'"> Excluir </a>
+            </td>
          </tr>
+         <?php } ?> <!-- fecha o while aqui para repetir cada linha da tabela até terminar todos os elementos da tabela $objcli -->
+         
       </tbody>
    </table>
    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cadCliente">Cadastrar</button>

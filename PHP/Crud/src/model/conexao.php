@@ -9,8 +9,9 @@ $conexao = new mysqli($host, $usuario, $senha, $db);
 
 if($conexao->connect_errno){
    die ("Erro: $conexao->connect_errno");
-}else{
-   echo "conexao ok";
 }
+// else{
+//   echo "conexao ok";
+// }
 
 ?>
