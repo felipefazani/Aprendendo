@@ -1,15 +1,17 @@
-<?php 
+<?php
 include "header.php";
+include "modalCliente.php";
 ?>
+
 <body class="container">
    <h1>Cadastro de Cliente</h1>
    <table class="table">
       <thead>
-        <th scope="col">Códigos</th>
-        <th scope="col">Nome</th>
-        <th scope="col">Endereço</th>
-        <th scope="col">Telefone</th>
-        <th scope="col">Ações</th>
+         <th scope="col">Códigos</th>
+         <th scope="col">Nome</th>
+         <th scope="col">Endereço</th>
+         <th scope="col">Telefone</th>
+         <th scope="col">Ações</th>
       </thead>
       <tbody>
          <tr>
@@ -21,6 +23,7 @@ include "header.php";
          </tr>
       </tbody>
    </table>
-   <button type="button" class="btn btn-primary">Cadastrar</button>
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cadCliente">Cadastrar</button>
 </body>
+
 </html>
