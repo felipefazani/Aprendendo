@@ -88,7 +88,7 @@ class Cliente
    public function atualizarCliente($conexao, $obj)
    {
       $comandosql = "Update cliente set nome = '$obj->nome', endereco = '$obj->endereco', telefone = '$obj->telefone' where codigo = $obj->codigo";
-
+      echo $comandosql;
       if ($conexao->query($comandosql))
          return true;
    }

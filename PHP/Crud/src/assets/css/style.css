@@ -1,0 +1,9 @@
+i{
+   font-size: 1.5rem;
+   color: blue;
+   
+}
+
+a i:hover{
+   color: rgb(123, 187, 224);
+}
