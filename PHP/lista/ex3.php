@@ -4,5 +4,4 @@
    function Dado(){
       return rand(1, 6);
    }
-   print(Dado());
 ?>

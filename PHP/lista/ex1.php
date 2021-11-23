@@ -12,7 +12,7 @@
    $qtdjog = 2;
    $lista_de_jogadores = [[$qtdtimes], [$qtdjog]];
    $menor = $alturas = $pesos = 0;
-   $idades = [$qtdtimes];
+   $idades = [];
 
    // armazenando a lista
    for ($i=0; $i < $qtdtimes; $i++) { 
