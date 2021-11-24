@@ -44,6 +44,8 @@
    elseif (isset($_POST['codigo'])) {
       if ($objCliente->inserirCliente($conexao, $objCliente)) {
          header("location:../view/index.php"); // se der certo volta para o index
+      }else{
+         echo "deu ruim parsero";
       }
    }
 

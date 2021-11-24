@@ -73,7 +73,7 @@ class Cliente
 
    public function inserirCliente($conexao, $obj)
    {
-      $comandosql = "Insert into cliente(nome, endereco, telefone) values ('$obj->nome', '$obj->endereco', '$obj->telefone'";
+      $comandosql = "Insert into cliente(nome, endereco, telefone) values ('$obj->nome', '$obj->endereco', '$obj->telefone')";
       if ($conexao->query($comandosql))
          return true;
    }
