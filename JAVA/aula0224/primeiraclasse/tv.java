@@ -21,5 +21,29 @@ public class tv {
     public void mostrarTv(){
         System.out.println("Volume: " + volume + 
                 "\nCanal: " + canal);
+        if(ligada)
+            System.out.println("Tv está ligada");
+        else
+            System.out.println("Tv está desligada");
     }
+    
+    public void mudaCanal(int num_canal){
+        canal = num_canal;
+    }
+    
+    public void aumentaVolume(){
+        if(volume < 10)
+            volume++;
+    }
+    
+    public void diminuiVolume(){
+        if(volume > 0)
+            volume--;
+    }
+    
+    public void OnOff(){
+        ligada = !ligada;
+    }
+    
+    
 }
