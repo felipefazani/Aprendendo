@@ -1,0 +1,4 @@
+massa
+cavalo
+heroi
+casa
